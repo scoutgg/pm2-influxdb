@@ -1,6 +1,6 @@
 {
   "name": "pm2-influxdb",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "PM2 module to send stats to InfluxDB",
   "main": "app.js",
   "dependencies": {
@@ -15,7 +15,7 @@
   "config": {
     "dbhost": "localhost",
     "dbname": "scoutgg",
-    "repo": "gameserver",
+    "repo": "repo",
     "interval": 300
   },
   "apps": [

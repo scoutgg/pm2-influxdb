@@ -28,6 +28,7 @@ pmx.initModule({}, (err, conf) => {
         tags: [
           'hostname',
           'repo',
+          'stage',
           'node',
           'name',
           'instance',
@@ -54,6 +55,7 @@ pmx.initModule({}, (err, conf) => {
             repo: conf.repo,
             node: process.version.replace('v', ''),
             name: app.name,
+            stage: process.env.STAGE,
             instance: app.pm2_env['NODE_APP_INSTANCE'],
           },
         }
