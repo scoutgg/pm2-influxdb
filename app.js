@@ -55,7 +55,7 @@ pmx.initModule({}, (err, conf) => {
             repo: conf.repo,
             node: process.version.replace('v', ''),
             name: app.name,
-            stage: process.env.STAGE,
+            stage: process.env.STAGE || process.env.SITE_ID,
             instance: app.pm2_env['NODE_APP_INSTANCE'],
           },
         }
