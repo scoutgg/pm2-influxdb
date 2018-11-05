@@ -47,7 +47,7 @@ pmx.initModule({}, (err, conf) => {
           measurement: 'pm2_apps',
           fields: {
             memory: app.monit.memory / (1024 * 1024),
-            cpu: app.monit.cpu * 100,
+            cpu: app.monit.cpu,
           },
           tags: {
             hostname: os.hostname(),
