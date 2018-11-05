@@ -1,0 +1,28 @@
+{
+  "name": "pm2-influxdb",
+  "version": "0.1.0",
+  "description": "PM2 module to send stats to InfluxDB",
+  "main": "app.js",
+  "dependencies": {
+    "pmx": "beta"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scoutgg/pm2-influxdb.git"
+  },
+  "config": {
+    "dbhost": "localhost",
+    "dbname": "scoutgg",
+    "repo": "gameserver", 
+    "interval": 300
+  },
+  "apps": [
+    {
+      "merge_logs": true,
+      "max_memory_restart": "256M",
+      "script": "app.js"
+    }
+  ],
+  "author": "loken.makwana@scoutgaminggroup.com",
+  "license": "MIT"
+}
